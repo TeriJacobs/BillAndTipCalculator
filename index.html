@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bill and Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+
+        <div class="container">
+            
+            <h2>Bill and Tip Calculator</h2>
+
+            <div class="straightLine">
+                <h3>Bill Split</h3>
+                    <span>What is the total bill?</span>
+                    <span> R <input type="number" id="billAmount" onkeyup="myFunction()"></input></span>
+
+                    <span>How many people are sharing the bill?</span>
+                    <span> R <input type="number" id="numOfPeople" onkeyup="myFunction()"></input></span>
+    
+                    <p>Each person should contribute R <span id="result1" class="answerDisplay"></span></p>
+            </div>
+            <div class="straightLine">
+                <h3>Tip Calculator</h3>
+     
+                    <p>Rate the service - please enter a value between 1 - 100 to represent the tip percentage </p>
+    
+                    <input type="number" id="tipAmount"> % </input>                    
+    
+                    <button onclick="calculateTip()">Calculate Tip</button>
+                    <p>Tip contribution R <span id="result2" class="answerDisplay"></span></p>
+            </div>    
+            <div class="straightLine">
+                <h3>Contrabution between each person sharing the bill</h3>
+                 
+                    <button onclick="combined()">Calculate</button>
+                    <p>Amount owing per person R <span id="result3" class="answerDisplay"></span></p>
+            </div>
+        </div>
+
+       <script type="text/javascript" src="tipcalculator.js"></script>  
+        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+body{
+   font-family: 'Raleway', sans-serif;
+   font-size: 15px;
+}
+
+.container{
+   margin: auto;
+   width:500px;
+   border: 2px solid black;
+   border-radius:10px;
+   padding-left:20px;
+   padding-right:5px;
+   padding-bottom:10px;
+}
+
+h2{
+   text-align:center;
+   text-decoration: underline;
+}
+
+span{
+   display:block;
+}
+
+input{
+   width: 200px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   
+   
+}
+
+.straightLine{
+   border: none;
+   border-bottom: 1px solid #efefef;
+   padding: 5px;
+   
+}
+
+.answerDisplay{
+   font-weight: 700;
+   font-size:20px;
+   color: green;
+   display: inline;
+}
+
+#billAmount, #numOfPeople, #tipAmount{
+   margin:15px 5px;
+   padding: 2px;
+}
+
+button{
+   border-radius: 4px;
+   border: 1.5px solid #9da9fc;
+   background-color:#9da9fc;
+   color: #000;
+   text-align: center;
+   height:25px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+   
+}
+
+
+
